@@ -1,0 +1,121 @@
+$color1: #fff;
+$color2: #000;
+$color3: #ef6817;
+$color4: #21201f;
+$color5: #727271;
+$color6: #5f605d;
+$color7: #383838;
+$color8: rgba(0, 0, 0, 0.5) ;
+$color9: rgba(225, 225, 225, 0.2) ;
+$golden-color: -webkit-linear-gradient(#efb810,#ffbf00);
+$font1: 'Bebas Neue', cursive;
+$font2: 'Della Respira', serif;
+$font3: 'Lobster', cursive;
+
+
+html{
+    font-family: $font1;
+}
+
+a{
+    text-decoration: none;
+    color: $color2;
+    &:hover{
+        @extend a;
+    }
+}
+
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin display($tipo, $justi, $align){
+    display: $tipo;
+    justify-content: $justi;
+    align-items: $align;
+}
+
+
+header{
+    @include display(flex, space-around, center);
+    padding-top: 2rem;
+    .logo{
+        flex: 0 0 calc(30% - 1rem);
+        a{
+            h2{
+                font-family: $font3;
+                text-transform: capitalize;
+                font-size: 2rem;
+            }
+        }
+    }
+            nav{
+                ul{
+                    @include display(flex, space-between, center);
+                    padding-right: 6rem;
+                    li{
+                        padding: {
+                            left: 1rem;
+                            right: 1rem;
+                        };
+                        a{
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                }
+            }
+}
+
+.hero{
+
+    padding-top: 3rem;
+    @extend .contenedor;
+    @include display(flex, space-around, center);
+    
+    h1{
+        flex: 0 0 calc(40% - 1rem);
+        font-size: 5rem;
+        color: $color7;
+        position: relative;
+        z-index: 100;
+        &::after{
+            content: '';
+            position: absolute;
+            
+            top: -30px;
+            left:70% ;
+            border: 7px solid $color7;
+            border-right-color: transparent;
+            border-left-color: transparent;
+            border-width: 0px 15px 30px;
+            background: transparent;
+
+            z-index: -1;
+            animation: rotar 6s linear infinite ;
+            
+        }
+        
+    }   
+    img{
+        $hwimg: 40%;
+        flex: 0 0 calc( 30% - 1rem);
+        width: $hwimg;
+        height: $hwimg;
+        position: relative;
+        z-index: 0;
+        
+    }
+}
+
+@keyframes rotar{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
