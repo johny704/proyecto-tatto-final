@@ -166,7 +166,7 @@ a{
             }
             .cont-text{
                 h3{
-                    @include display(flex, flex-start, center);
+                   
                     font-size: 3rem;
                     margin-bottom: 3rem;
                     position: relative;
@@ -228,14 +228,14 @@ a{
     }
     .horarios{
         flex: 0 0 calc(30% - 1rem);
-        @include display(flex, space-around, start);
+        @include display(flex, space-around, center);
         border-bottom: 2px solid $color3;
         padding: 2rem;
         text-align: left;
     }
 
     .siguenos{
-        @include display(flex, flex-start, center);
+        @include display(flex, center, center);
         flex-direction: column;
         padding: 1rem;
         p{
@@ -252,7 +252,7 @@ a{
 }
 @media (min-width: 600px){
     .contmainfooter{
-        margin-top: 2rem;
+        margin-top: 2.1rem;
         @include display(flex, space-between, center);
         flex-direction: row;
         @extend .contenedor;
@@ -266,7 +266,7 @@ a{
         }
         .horarios{
             flex: 0 0 calc(30% - 1rem);
-            @include display(flex, space-around, start);
+            @include display(flex, space-around, center);
             border-right: 2px solid $color3;
             border-bottom: none;
             padding: 2rem;
@@ -274,7 +274,7 @@ a{
         }
     
         .siguenos{
-            @include display(flex, flex-start, center);
+            @include display(flex, center, center);
             flex-direction: column;
             padding: 1rem;
             p{
@@ -325,7 +325,7 @@ p{
         width: 40vw;
     }
     form{
-        @include display(flex, space-between, center);
+        @include display(flex, space-around, center);
         flex-direction: column;
         width: 80vw;
         input{

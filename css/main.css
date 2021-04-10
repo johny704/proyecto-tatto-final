@@ -386,15 +386,6 @@ header nav ul li a, header nav ul li a:hover {
     width: 40%;
   }
   .historia .cont-historia .cont-text h3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     font-size: 3rem;
     margin-bottom: 3rem;
     position: relative;
@@ -465,9 +456,9 @@ header nav ul li a, header nav ul li a:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 2px solid #ef6817;
   padding: 2rem;
   text-align: left;
@@ -476,9 +467,9 @@ header nav ul li a, header nav ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -499,7 +490,7 @@ header nav ul li a, header nav ul li a:hover {
 
 @media (min-width: 600px) {
   .contmainfooter {
-    margin-top: 2rem;
+    margin-top: 2.1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -531,9 +522,9 @@ header nav ul li a, header nav ul li a:hover {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-right: 2px solid #ef6817;
     border-bottom: none;
     padding: 2rem;
@@ -543,9 +534,9 @@ header nav ul li a, header nav ul li a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -605,9 +596,8 @@ p i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
