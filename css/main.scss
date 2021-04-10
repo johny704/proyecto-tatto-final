@@ -43,7 +43,110 @@ a{
     align-items: $align;
 }
 
-@import 'header';
+
+header{
+    @include display(flex, space-around, center);
+    flex-direction: column;
+    padding-top: 2rem;
+    .logo{
+        flex: 0 0 calc(80% - 1rem);
+        
+        a{
+            h2{
+                font-family: $font3;
+                text-transform: capitalize;
+                font-size: 3rem;
+                padding-bottom: 2rem;
+                background: $color1;
+            }
+        }
+    }
+            nav{
+                display: none;
+                
+                ul{
+                    text-align: center;
+                    margin: 0 auto;
+                    @include display(flex, space-between, center);
+                    flex-direction: column;
+
+                    
+                    li{
+                        padding: {
+                            left: 1rem;
+                            right: 1rem;
+                            top: 1.2rem;
+                        };
+                        a{
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                }
+                
+            }
+            a{
+                i{
+                    display: block;
+                    color: $color3;
+                }
+            }
+}
+
+
+@media (min-width:600px) {
+
+
+
+
+    header{
+        @include display(flex, space-around, center);
+        padding-top: 2rem;
+        flex-direction: row;
+        .logo{
+            flex: 0 0 calc(30% - 1rem);
+            a{
+                h2{
+                    font-family: $font3;
+                    text-transform: capitalize;
+                    font-size: 2rem;
+                }
+            }
+        }
+                nav{
+                    display: block;
+                    ul{
+                        @include display(flex, space-between, center);
+                        
+                        flex-direction: row;
+                        li{
+                            padding: {
+                                left: 1rem;
+                                right: 1rem;
+                                bottom: 1rem;
+                                top: 1rem;
+                            };
+                            a{
+                                font-size: 1.2rem;
+                            }
+                            &:last-child{
+                                border: 2px solid $color3;
+                            }
+                        }
+                        
+    
+                    }
+                    
+                    
+                }
+           
+    }
+
+
+
+
+
+}
 
 @import 'hero';
 
@@ -189,6 +292,7 @@ a{
     
     
 }
+
 
 .contmainfooter{
     margin-top: 2rem;
@@ -463,6 +567,19 @@ p{
     }
 }
 
+.mostrar{
+    display: block;
+}
+
+.nav-bar{
+    display: block;
+}
+@media(min-width: 600px){
+    .nav-bar{
+        display: none;
+    }
+    
+}
 
 
 @keyframes rotar{
