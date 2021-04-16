@@ -573,12 +573,32 @@ p{
 
 .nav-bar{
     display: block;
+    cursor: pointer;
 }
 @media(min-width: 600px){
     .nav-bar{
         display: none;
     }
     
+}
+.desbutton{
+    opacity: 70%;
+}
+
+.input{
+    &-correcto{
+        border: 5px solid green;
+        background: rgba(0, 225, 0, 0.5);
+
+
+    }
+    &-error{
+        background: rgba(225, 0, 0, 0.2);
+        border: 4px solid red;
+    }
+}
+.error{
+    padding: 1rem 2rem;
 }
 
 
