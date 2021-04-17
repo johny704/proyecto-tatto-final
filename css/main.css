@@ -837,6 +837,7 @@ p i {
   }
   .nav-bar {
     display: none;
+    font-size: 3rem;
   }
 }
 
