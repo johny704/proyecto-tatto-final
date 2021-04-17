@@ -94,59 +94,7 @@ header{
 }
 
 
-@media (min-width:600px) {
 
-
-
-
-    header{
-        @include display(flex, space-around, center);
-        padding-top: 2rem;
-        flex-direction: row;
-        .logo{
-            flex: 0 0 calc(30% - 1rem);
-            a{
-                h2{
-                    font-family: $font3;
-                    text-transform: capitalize;
-                    font-size: 2rem;
-                }
-            }
-        }
-                nav{
-                    display: block;
-                    ul{
-                        @include display(flex, space-between, center);
-                        
-                        flex-direction: row;
-                        li{
-                            padding: {
-                                left: 1rem;
-                                right: 1rem;
-                                bottom: 1rem;
-                                top: 1rem;
-                            };
-                            a{
-                                font-size: 1.2rem;
-                            }
-                            &:last-child{
-                                border: 2px solid $color3;
-                            }
-                        }
-                        
-    
-                    }
-                    
-                    
-                }
-           
-    }
-
-
-
-
-
-}
 
 @import 'hero';
 
@@ -185,43 +133,7 @@ header{
 }
 
 
-@media (min-width: 600px){
 
-.galery{
-    margin-top: 3rem;
-    @extend .contenedor;
-    margin-bottom: 3rem;
-    h2{
-        @include display(flex, flex-end, center);
-        font-size: 3rem;
-        margin-bottom: 3rem;
-        position: relative;
-        z-index: 1;
-        &:before{
-            position: absolute;
-            content: 'galery';
-            z-index: -1;
-            color: $color3;
-            font-size: 4rem ;
-            top: 1rem;
-            right: 2rem;
-        }
-        
-    }
-    .cont-imagenes{
-        @include display(flex, space-around, center);
-        flex-direction: row;
-        img{
-            width: 30%;
-            flex: 0 0 calc(30% -1rem);
-            
-            
-            height: 600px;
-            border: 3px solid $color4;
-        }
-    }
-}
-}
 
 
 .historia{
@@ -254,43 +166,6 @@ header{
             }
         }
     }
-}
-
-@media (min-width:600px){
-    .historia{
-        @extend .contenedor;
-        .cont-historia{
-            @include display(flex, space-around, center);
-            flex-direction: row;
-            img{
-                order: -1;
-                flex: 0 0 calc(40% - 1rem);
-                width: 40%;
-            }
-            .cont-text{
-                h3{
-                   
-                    font-size: 3rem;
-                    margin-bottom: 3rem;
-                    position: relative;
-                    z-index: 1;
-                    &:before{
-                        position: absolute;
-                        content: 'history';
-                        z-index: -1;
-                        color: $color3;
-                        font-size: 4rem ;
-                        top: 1rem;
-                        left: 2rem;
-                    }
-                    
-                }
-            }
-        }
-    }
-
-    
-    
 }
 
 
@@ -353,47 +228,6 @@ header{
         }
 
     }
-}
-@media (min-width: 600px){
-    .contmainfooter{
-        margin-top: 2.1rem;
-        @include display(flex, space-between, center);
-        flex-direction: row;
-        @extend .contenedor;
-        .direccion{
-            flex: 0 0 calc(30% - 1rem);
-            border-right: 2px solid $color3;
-            border-bottom: none;
-            padding: 2rem;
-            
-            
-        }
-        .horarios{
-            flex: 0 0 calc(30% - 1rem);
-            @include display(flex, space-around, center);
-            border-right: 2px solid $color3;
-            border-bottom: none;
-            padding: 2rem;
-            text-align: left;
-        }
-    
-        .siguenos{
-            @include display(flex, center, center);
-            flex-direction: column;
-            padding: 1rem;
-            p{
-                padding: 1rem;
-            }
-    
-            a{
-                padding: 1rem;
-                margin-top: 2rem;
-                background: $color3;
-            }
-    
-        }
-    }
-    
 }
 
 
@@ -486,86 +320,7 @@ p{
     }
 }
 
-@media (min-width: 500px){
-    .titulo-form{
-        
-        font-size: 4rem;
-        
-        &:before{
-            position: absolute;
-            content: 'form contact';
-            z-index: -1;
-            
-            font-size: 4rem ;
-          
-            
-        }
-    }
-    .formularioreg{
-        @include display(flex, space-around, center);
-        flex-direction: row;
-        @extend .contenedor;
-        img{
-            width: 40vw;
-        }
-        form{
-            @include display(flex, space-between, center);
-            flex-direction: column;
-            width: 60vw;
-            input{
-                margin: 1rem;
-                width: 100%;
-                appearance: none;
-                border: none;
-                padding: 1rem;
-                border-bottom: 2px solid $color5;
-                font-size: 1.2rem;
-                font-family: $font1;
-                &:focus{
-                    border:none;
-                    border-bottom: 3px solid $color3;
-                    
-                    
-                }
-    
-    
-            }
-            input[type="submit"]{
-                margin: 1rem;
-                width: 100%;
-                appearance: none;
-                border: none;
-                padding: 1rem;
-                border-bottom: 2px solid $color5;
-                font-size: 1.2rem;
-                font-family: $font1;
-                &:hover{
-                    background: $color3;
-                }
-            }
-            select{
-                
-                width: 100%;
-                appearance: none;
-                border: none;
-                padding: 1rem;
-                border-bottom: 2px solid $color5;
-                font-size: 1.2rem;
-                font-family: $font1;
-                &:focus{
-                    border:none;
-                    border-bottom: 3px solid $color3;
-                    
-                    
-                }
-    
-            }
-            label{
-                margin: 1rem;
-            }
-        }
-    }
-}
+
 
 .mostrar{
     display: block;
@@ -575,12 +330,7 @@ p{
     display: block;
     cursor: pointer;
 }
-@media(min-width: 600px){
-    .nav-bar{
-        display: none;
-    }
-    
-}
+
 .desbutton{
     opacity: 70%;
 }
@@ -601,6 +351,268 @@ p{
     padding: 1rem 2rem;
 }
 
+.envio{
+    padding: 1rem;
+}
+
+.spiner{
+    border: 6px solid rgba(0, 0, 0, .1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-left-color: $color3;
+
+    animation: spin 1s linear infinite;
+    display: none;
+}
+@media (min-width:600px) {
+
+
+
+
+    header{
+        @include display(flex, space-around, center);
+        padding-top: 2rem;
+        flex-direction: row;
+        .logo{
+            flex: 0 0 calc(30% - 1rem);
+            a{
+                h2{
+                    font-family: $font3;
+                    text-transform: capitalize;
+                    font-size: 2rem;
+                }
+            }
+        }
+                nav{
+                    display: block;
+                    ul{
+                        @include display(flex, space-between, center);
+                        
+                        flex-direction: row;
+                        li{
+                            padding: {
+                                left: 1rem;
+                                right: 1rem;
+                                bottom: 1rem;
+                                top: 1rem;
+                            };
+                            a{
+                                font-size: 1.2rem;
+                            }
+                            &:last-child{
+                                border: 2px solid $color3;
+                            }
+                        }
+                        
+    
+                    }
+                    
+                    
+                }
+           
+    }
+   
+
+.galery{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    h2{
+        @include display(flex, flex-end, center);
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 1;
+        &:before{
+            position: absolute;
+            content: 'galery';
+            z-index: -1;
+            color: $color3;
+            font-size: 4rem ;
+            top: 1rem;
+            right: 2rem;
+        }
+        
+    }
+    .cont-imagenes{
+        @include display(flex, space-around, center);
+        flex-direction: row;
+        img{
+            width: 30%;
+            flex: 0 0 calc(30% -1rem);
+            
+            
+            height: 600px;
+            border: 3px solid $color4;
+        }
+    }
+}
+
+.historia{
+   
+    .cont-historia{
+        @include display(flex, space-around, center);
+        flex-direction: row;
+        img{
+            order: -1;
+            flex: 0 0 calc(40% - 1rem);
+            width: 40%;
+        }
+        .cont-text{
+            h3{
+               
+                font-size: 3rem;
+                margin-bottom: 3rem;
+                position: relative;
+                z-index: 1;
+                &:before{
+                    position: absolute;
+                    content: 'history';
+                    z-index: -1;
+                    color: $color3;
+                    font-size: 4rem ;
+                    top: 1rem;
+                    left: 2rem;
+                }
+                
+            }
+        }
+    }
+}
+
+.contmainfooter{
+    margin-top: 2.1rem;
+    @include display(flex, space-between, center);
+    flex-direction: row;
+    
+    .direccion{
+        flex: 0 0 calc(30% - 1rem);
+        border-right: 2px solid $color3;
+        border-bottom: none;
+        padding: 2rem;
+        
+        
+    }
+    .horarios{
+        flex: 0 0 calc(30% - 1rem);
+        @include display(flex, space-around, center);
+        border-right: 2px solid $color3;
+        border-bottom: none;
+        padding: 2rem;
+        text-align: left;
+    }
+
+    .siguenos{
+        @include display(flex, center, center);
+        flex-direction: column;
+        padding: 1rem;
+        p{
+            padding: 1rem;
+        }
+
+        a{
+            padding: 1rem;
+            margin-top: 2rem;
+            background: $color3;
+        }
+
+    }
+}
+
+.titulo-form{
+        
+    font-size: 4rem;
+    
+    &:before{
+        position: absolute;
+        content: 'form contact';
+        z-index: -1;
+        
+        font-size: 4rem ;
+      
+        
+    }
+}
+.formularioreg{
+    @include display(flex, space-around, center);
+    flex-direction: row;
+    
+    img{
+        width: 40vw;
+    }
+    form{
+        @include display(flex, space-between, center);
+        flex-direction: column;
+        width: 60vw;
+        input{
+            margin: 1rem;
+            width: 100%;
+            appearance: none;
+            border: none;
+            padding: 1rem;
+            border-bottom: 2px solid $color5;
+            font-size: 1.2rem;
+            font-family: $font1;
+            &:focus{
+                border:none;
+                border-bottom: 3px solid $color3;
+                
+                
+            }
+
+
+        }
+        input[type="submit"]{
+            margin: 1rem;
+            width: 100%;
+            appearance: none;
+            border: none;
+            padding: 1rem;
+            border-bottom: 2px solid $color5;
+            font-size: 1.2rem;
+            font-family: $font1;
+            &:hover{
+                background: $color3;
+            }
+        }
+        select{
+            
+            width: 100%;
+            appearance: none;
+            border: none;
+            padding: 1rem;
+            border-bottom: 2px solid $color5;
+            font-size: 1.2rem;
+            font-family: $font1;
+            &:focus{
+                border:none;
+                border-bottom: 3px solid $color3;
+                
+                
+            }
+
+        }
+        label{
+            margin: 1rem;
+        }
+    }
+}
+.nav-bar{
+    display: none;
+    
+}
+
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 @keyframes rotar{
     0%{
