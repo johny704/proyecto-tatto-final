@@ -53,44 +53,6 @@ header a i, header a:hover i {
   color: #ef6817;
 }
 
-@media (min-width: 600px) {
-  header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 2rem;
-    flex-direction: row;
-  }
-  header .logo {
-    flex: 0 0 calc(30% - 1rem);
-  }
-  header .logo a h2 {
-    font-family: "Lobster", cursive;
-    text-transform: capitalize;
-    font-size: 2rem;
-  }
-  header nav {
-    display: block;
-  }
-  header nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  header nav ul li {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
-  header nav ul li a, header nav ul li a:hover {
-    font-size: 1.2rem;
-  }
-  header nav ul li:last-child {
-    border: 2px solid #ef6817;
-  }
-}
 .hero {
   padding-top: 3rem;
   display: flex;
@@ -198,42 +160,6 @@ header a i, header a:hover i {
   border: 3px solid #21201f;
 }
 
-@media (min-width: 600px) {
-  .galery {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-  .galery h2 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    position: relative;
-    z-index: 1;
-  }
-  .galery h2:before {
-    position: absolute;
-    content: "galery";
-    z-index: -1;
-    color: #ef6817;
-    font-size: 4rem;
-    top: 1rem;
-    right: 2rem;
-  }
-  .galery .cont-imagenes {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-  }
-  .galery .cont-imagenes img {
-    width: 30%;
-    flex: 0 0 calc(30% -1rem);
-    height: 600px;
-    border: 3px solid #21201f;
-  }
-}
 .historia .cont-historia {
   display: flex;
   justify-content: space-around;
@@ -264,34 +190,6 @@ header a i, header a:hover i {
   left: 2rem;
 }
 
-@media (min-width: 600px) {
-  .historia .cont-historia {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-  }
-  .historia .cont-historia img {
-    order: -1;
-    flex: 0 0 calc(40% - 1rem);
-    width: 40%;
-  }
-  .historia .cont-historia .cont-text h3 {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    position: relative;
-    z-index: 1;
-  }
-  .historia .cont-historia .cont-text h3:before {
-    position: absolute;
-    content: "history";
-    z-index: -1;
-    color: #ef6817;
-    font-size: 4rem;
-    top: 1rem;
-    left: 2rem;
-  }
-}
 .contmainfooter {
   margin-top: 2rem;
   display: flex;
@@ -352,46 +250,6 @@ header a i, header a:hover i {
   background: #ef6817;
 }
 
-@media (min-width: 600px) {
-  .contmainfooter {
-    margin-top: 2.1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  .contmainfooter .direccion {
-    flex: 0 0 calc(30% - 1rem);
-    border-right: 2px solid #ef6817;
-    border-bottom: none;
-    padding: 2rem;
-  }
-  .contmainfooter .horarios {
-    flex: 0 0 calc(30% - 1rem);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-right: 2px solid #ef6817;
-    border-bottom: none;
-    padding: 2rem;
-    text-align: left;
-  }
-  .contmainfooter .siguenos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem;
-  }
-  .contmainfooter .siguenos p {
-    padding: 1rem;
-  }
-  .contmainfooter .siguenos a {
-    padding: 1rem;
-    margin-top: 2rem;
-    background: #ef6817;
-  }
-}
 p i {
   color: #ef6817;
 }
@@ -472,7 +330,185 @@ p i {
   margin: 1rem;
 }
 
-@media (min-width: 500px) {
+.mostrar {
+  display: block;
+}
+
+.nav-bar {
+  display: block;
+  cursor: pointer;
+}
+
+.desbutton {
+  opacity: 70%;
+}
+
+.input-correcto {
+  border: 5px solid green;
+  background: rgba(0, 225, 0, 0.5);
+}
+.input-error {
+  background: rgba(225, 0, 0, 0.2);
+  border: 4px solid red;
+}
+
+.error {
+  padding: 1rem 2rem;
+}
+
+.envio {
+  padding: 1rem;
+}
+
+.spiner {
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-left-color: #ef6817;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    flex-direction: row;
+  }
+  header .logo {
+    flex: 0 0 calc(30% - 1rem);
+  }
+  header .logo a h2 {
+    font-family: "Lobster", cursive;
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+  header nav {
+    display: block;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  header nav ul li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  header nav ul li a, header nav ul li a:hover {
+    font-size: 1.2rem;
+  }
+  header nav ul li:last-child {
+    border: 2px solid #ef6817;
+  }
+
+  .galery {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .galery h2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+  .galery h2:before {
+    position: absolute;
+    content: "galery";
+    z-index: -1;
+    color: #ef6817;
+    font-size: 4rem;
+    top: 1rem;
+    right: 2rem;
+  }
+  .galery .cont-imagenes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .galery .cont-imagenes img {
+    width: 30%;
+    flex: 0 0 calc(30% -1rem);
+    height: 600px;
+    border: 3px solid #21201f;
+  }
+
+  .historia .cont-historia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .historia .cont-historia img {
+    order: -1;
+    flex: 0 0 calc(40% - 1rem);
+    width: 40%;
+  }
+  .historia .cont-historia .cont-text h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+  .historia .cont-historia .cont-text h3:before {
+    position: absolute;
+    content: "history";
+    z-index: -1;
+    color: #ef6817;
+    font-size: 4rem;
+    top: 1rem;
+    left: 2rem;
+  }
+
+  .contmainfooter {
+    margin-top: 2.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .contmainfooter .direccion {
+    flex: 0 0 calc(30% - 1rem);
+    border-right: 2px solid #ef6817;
+    border-bottom: none;
+    padding: 2rem;
+  }
+  .contmainfooter .horarios {
+    flex: 0 0 calc(30% - 1rem);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 2px solid #ef6817;
+    border-bottom: none;
+    padding: 2rem;
+    text-align: left;
+  }
+  .contmainfooter .siguenos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .contmainfooter .siguenos p {
+    padding: 1rem;
+  }
+  .contmainfooter .siguenos a {
+    padding: 1rem;
+    margin-top: 2rem;
+    background: #ef6817;
+  }
+
   .titulo-form {
     font-size: 4rem;
   }
@@ -543,37 +579,14 @@ p i {
     margin: 1rem;
   }
 }
-.mostrar {
-  display: block;
-}
-
-.nav-bar {
-  display: block;
-  cursor: pointer;
-}
-
-@media (min-width: 600px) {
-  .nav-bar {
-    display: none;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
-.desbutton {
-  opacity: 70%;
-}
-
-.input-correcto {
-  border: 5px solid green;
-  background: rgba(0, 225, 0, 0.5);
-}
-.input-error {
-  background: rgba(225, 0, 0, 0.2);
-  border: 4px solid red;
-}
-
-.error {
-  padding: 1rem 2rem;
-}
-
 @keyframes rotar {
   0% {
     transform: rotate(0deg);
