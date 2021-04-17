@@ -7,7 +7,7 @@ a, a:hover {
   color: #000;
 }
 
-.contenedor, .hero, .galery, .historia, .contmainfooter, .formularioreg {
+.contenedor, .galery, .historia, .contmainfooter, .formularioreg {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
